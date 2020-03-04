@@ -9,16 +9,27 @@
   "dependencies": {
     "@rocketseat/gatsby-theme-docs": "^2.0.5",
     "gatsby": "^2.19.10",
+    "gatsby-image": "^2.2.42",
     "gatsby-plugin-canonical-urls": "^2.1.19",
     "gatsby-plugin-google-analytics": "^2.1.34",
     "gatsby-plugin-manifest": "^2.2.37",
+    "gatsby-plugin-next-seo": "^1.4.0",
     "gatsby-plugin-offline": "^3.0.32",
+    "gatsby-plugin-sharp": "^2.4.5",
     "gatsby-plugin-sitemap": "^2.2.26",
+    "gatsby-remark-responsive-iframe": "^2.2.32",
+    "gatsby-transformer-remark": "^2.6.53",
+    "gatsby-transformer-sharp": "^2.3.16",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-helmet-async": "^1.0.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/code-frame": "^7.8.3",
+    "@babel/highlight": "^7.8.3",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.8.3"
+  },
   "keywords": [
     "gatsby",
     "rocketseat",

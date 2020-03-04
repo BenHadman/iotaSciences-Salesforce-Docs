@@ -1,0 +1,79 @@
+---
+title: 'Quoting'
+description: 'A guide to quoting in Salesforce'
+image: /banner.png
+---
+
+![Products to Opportunity](products-to-opportunity.gif)
+
+## Prequisites
+* Opportunity is open
+  * Opportunity Currency is filled
+* Account is linked
+  * Account has Billing Address filled
+  * Account has Shipping Address filled
+* Primary Contact is the person to recieve the quote
+
+
+## Add Products to Opportunity
+1. Click on the *Products* Related List from the opportunity record.
+2. Click the *Add Products* button in the top right.
+3. Select the products which  you would like to add to the quote. (The currency is filtered by the *Opportunity Currency* field to show the products in the correct currency)
+4. Add the correct quantity in the *quantity* fields. (Leave *Date* and *Line Description* blank)
+5. Click *Save* at the bottom of the modal screen.
+6. (Move back to the opportunity record)
+
+## Creating a Quote from an Opportunity
+1. Click on the *Quotes* Related List from the opportunity record.
+2. Click the *New Quote* button in the top right.
+3. Fill in the following fields:
+  * *Quote Name* the quote the company name and/or the contact name. (A quote number will be automatically generated in a seperate field)
+  * *Expiration Date*
+  * *Status* = 'Draft'
+  * *Tax* if applies (US)
+  * *Shipping and Handling* Leave blank if absorbed into cost of unit.
+  * *Prepared For* These fields should be prepopulated with *Primary Contact* information
+  * *Address Information* These fields should be prepopulated with *Account* information
+4. Click *Save*
+5. (The page may need to be refreshed for the quote to appear)
+
+## Quote Process
+Quote issuing follows a similar staged process as opportunities.
+Depending on the need for internal review of quotes this process may be shorter or as outlined below.
+
+1. **Draft**
+Initial stage after creation
+2. **Needs Review**
+(If applicable) Reviewer needs to check the quote
+3. **Approved**
+Reviewer approves the quote and issuer can send to customer
+4. **Rejected**
+Reviewer rejects the quote and uses the *Activity* pane to write a task for the issuer detailing what needs changing.
+5. **Presented to Customer**
+Issuer has sent to customer and is waiting for a reply
+6. **Accepted**
+Customer accepts the quote
+7. **Declined**
+Customer Declines the quote
+
+## Generating a Quote PDF
+Once the Quote has been set to approved status the quote issuer can create a *Quote PDF* which will generate the quote in PDF format, suitable for sending to a customer.
+
+1. Click the *Create PDF* button in the top right of the screen
+2. Review the generated PDF
+3. Click *Save PDF*
+4. *Download* or *Print* using the buttons in the PDF Viewer.
+
+Each time the quote detail is amended a new PDF Quote will need to be generated, these versions will be numbered and listed in the *Quote PDFs* related list.
+
+## Syncing the Quote to the Opportunity
+Syncing the quote to the opportunity will replace the opportunity products listed.
+The *Opportunity Amount* will be updated.
+
+1. From the quote record view click the *Start Sync* button in the top right of the screen.
+
+## Changes to a Quote
+Any changes to a quote should be edited on the existing quote, all changes to fields are tracked. A second quote should not be generated as the tracking becomes split over >1 record and analytics will be skewed.
+
+
+

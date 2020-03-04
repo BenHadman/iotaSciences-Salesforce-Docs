@@ -3,15 +3,37 @@ module.exports = {
     siteTitle: `@rocketseat/gatsby-theme-docs`,
     defaultTitle: `@rocketseat/gatsby-theme-docs`,
     siteTitleShort: `gatsby-theme-docs`,
-    siteDescription: `Out of the box Gatsby Theme for creating documentation websites easily and quickly`,
+    siteDescription: `iotaSciences Salesforce Docs`,
     siteUrl: `https://rocketdocs.netlify.com`,
     siteAuthor: `@rocketseat`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
-    themeColor: `#7159c1`,
-    footer: `Theme by Rocketseat`,
+    themeColor: `#344877`,
+    footer: `BH`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-next-seo',
+      options: {
+        dangerouslySetAllPagesToNoIndex: 'true',
+        noindex: 'true',
+        nofollow: true,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-responsive-iframe`],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/docs`,
+      },
+    },
     {
       resolve: `@rocketseat/gatsby-theme-docs`,
       options: {
@@ -22,8 +44,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rocketseat Gatsby Themes`,
-        short_name: `RS Gatsby Themes`,
+        name: `iotaSciences Salesforce Docs`,
+        short_name: `Salesforce Docs`,
         start_url: `/`,
         background_color: `#ffffff`,
         display: `standalone`,
@@ -34,7 +56,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-99997611-9`,
+        trackingId: ``,
       },
     },
     {
@@ -46,3 +68,4 @@ module.exports = {
     `gatsby-plugin-offline`,
   ],
 };
+
