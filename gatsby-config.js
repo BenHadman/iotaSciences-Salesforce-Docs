@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    siteTitle: `@rocketseat/gatsby-theme-docs`,
-    defaultTitle: `@rocketseat/gatsby-theme-docs`,
-    siteTitleShort: `gatsby-theme-docs`,
-    siteDescription: `iotaSciences Salesforce Docs`,
+    siteTitle: `iotaSciences Salesforce Docs`,
+    defaultTitle: `iotaSciences Salesforce Docs`,
+    siteTitleShort: `iotaSciences Salesforce Docs`,
+    siteDescription: `Documentation for using Salesforce at iotaSciences.`,
     siteUrl: `https://rocketdocs.netlify.com`,
-    siteAuthor: `@rocketseat`,
+    siteAuthor: `Ben Hadman`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
     themeColor: `#344877`,

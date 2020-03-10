@@ -7,9 +7,26 @@ image: /banner.png
 ## Introduction
 An *Opportunity* is opened when sales opportunity opens with a *Contact*.
 This object within Salesforce is designed to guide you through the iotaSciences Opportunity Process, gathering and inputting data into the CRM along the way.
-*Probability* is a field which assigns a % probablility to an opportunity turning into an order. This is a metric which can only be calculated accurately if opportunities are treated in the same way by following the established process. When a number of opportunities have been tracked through this process and turned into orders we will be able to accurately assign real probabilities to each stage. A number of other important sales metrics can also be derived from the dataset generated from guiding opportunities through a standardised opportunity process.
+*Probability* is a field which assigns a % probability to an opportunity turning into an order. This is a metric which can only be calculated accurately if opportunities are treated in the same way by following the established process. When a number of opportunities have been tracked through this process and turned into orders we will be able to accurately assign real probabilities to each stage. A number of other important sales metrics can also be derived from the dataset generated from guiding opportunities through a standardised opportunity process.
 
-## Prequisites
+### Opportunities *Related Lists**
+The Objects related to Opportunities are displayed on the right hand side of the page, these are lists of the records which are linked to the Opportunity.
+  * Contact roles - This is the list of Contacts which are linked to the opportunity. The primary contact is the person with whom you coordinate most activity however there are various Contact Roles which can be assigned to a contact.
+   * User
+   * Influencer
+   * Buyer
+   * Initiator
+   * Decider
+   * Gatekeeper
+   * Evaluator
+   * Other
+  * Products - These are the products added to the opportunity which 
+  * Quotes
+  * Notes & Attachments
+  * Stage History
+  * Partners
+
+## Prerequisites
 
 
 ## Creating an Opportunity
@@ -18,7 +35,7 @@ Records can be created in many ways in Salesforce but the best place to start fr
 1. Click the *Create New Opportunity* button from the top right
 2. A modal screen will popup, with fields to populate.
   * *Opportunity Name* - This has been populated for you, it is not recommended this is changed.
-  * *Primary Campaign Source* - Add the campaign source from whihc this opportunity initiated the opportunity (buying process)
+  * *Primary Campaign Source* - Add the campaign source from which this opportunity initiated the opportunity (buying process)
   * *Opportunity Currency* - The currency, relating to the contacts location.
 3. Click *save*
 4. You may want to enter the opportunity record now and complete more fields.
@@ -28,11 +45,11 @@ Records can be created in many ways in Salesforce but the best place to start fr
 
 ADD THE KEYFIELDSANDGUIDANCEFORSUCCESS GIF HERE
 
-Using the *Path* buttons across the rop of an opportunity record you can move the opportunity through the different stages.
+Using the *Path* buttons across the top of an opportunity record you can move the opportunity through the different stages.
 For each stage the will be *Key Fields* which are the fields necessary to be completed before you can move the opportunity to the next stage, relating to the criteria outlines in the opportunity process for this stage.
 Next to the *Key Fields* is the *Guidance for Success* which are a description of and instructions for the opportunity stage.
 
-An opportunity can easily be moved between stages by clicking on the opportunity stage of your choice and then using the *Mark as Current Stage* button to confrm.
+An opportunity can easily be moved between stages by clicking on the opportunity stage of your choice and then using the *Mark as Current Stage* button to confirm.
 
 
 
